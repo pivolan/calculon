@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>hello universe</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <table cellpadding="0" cellspacing="0" width="860" align="center">
+        <tr>
+            <td colspan="3" class="header">Calculus</td>
+        </tr>
+        <tr>
+            <td class="left_col"></td>
+            <form name="mainform" accept-charset="utf-8"> <!--action="index.php" onsubmit="return true;"-->
+            <td class="center_col">
+                <table class="calc_input_table">
+                    <tr>
+                        <td>
+                            <label for="iBox"></label>
+                            <input type="text" name="InputBox" id="iBox" value="" class="calc_text_box">
+                        </td>
+                    </tr>
+                </table>
+                <table class="calc_table">
+                    <tr>
+                        <td><button class="calc_button" onclick="BackButton(); return false;"><-</button></td>
+                        <td><button class="calc_button" onclick="DigitButton('*'); return false;">*</button></td>
+                        <td><button class="calc_button" onclick="DigitButton('-'); return false;">-</button></td>
+                        <td><button class="calc_button" onclick="DigitButton('+'); return false;">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calc_button" onclick="DigitButton('1'); return false;">1</button></td>
+                        <td><button class="calc_button" onclick="DigitButton('2'); return false;">2</button></td>
+                        <td><button class="calc_button" onclick="DigitButton('3'); return false;">3</button></td>
+                        <td><button class="calc_button" onclick="DigitButton('/'); return false;">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calc_button" onclick="DigitButton('4'); return false;">4</button></td>
+                        <td><button class="calc_button" onclick="DigitButton('5'); return false;">5</button></td>
+                        <td><button class="calc_button" onclick="DigitButton('6'); return false;">6</button></td>
+                        <td><button class="calc_button" onclick="DigitButton('('); return false;">(</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calc_button" onclick="DigitButton('7'); return false;">7</button></td>
+                        <td><button class="calc_button" onclick="DigitButton('8'); return false;">8</button></td>
+                        <td><button class="calc_button" onclick="DigitButton('9'); return false;">9</button></td>
+                        <td><button class="calc_button" onclick="DigitButton(')'); return false;">)</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calc_button" onclick="DigitButton('0'); return false;">0</button></td>
+                        <td><button class="calc_button" onclick="DigitButton('.'); return false;">.</button></td>
+                        <td><button name="ResultButton" id="btn_result" class="calc_button"  onclick="ResultButton_click(); return false;">=</button></td>
+                        <td><button class="calc_button" onclick="DigitButton('^');  return false;">^</button></td>
+                    </tr>
+                </table>
+                <table class="calc_input_table">
+                    <tr>
+                        <td>
+                            <label for="oBox"></label>
+                            <input type="text" name="OutputBox" id="oBox" class="calc_text_box" disabled>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            </form>
+            <td class="right_col"></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="footer">&copy; Все права защищены</td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="buttons.js"></script>
+</body>
+</html>
